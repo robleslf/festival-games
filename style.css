@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body{
+    background-color: rgb(19, 74, 224);
+    font-family: "Roboto";
+}
+
+#titulo{
+    color: white;
+    position:relative;
+    margin-left: 30%;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px #000, 
+    -4px 0 0px #000,
+    7px 4px 0 #fff;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 65%;
+    margin: auto;
+}
+
+#juegos{
+    text-align: center;
+}
+
+h2{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    /* margin-left: 20%; */
+    text-align: center;
+}
+
+@media (max-width: 416px){
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+ 
+}
+
+
+
+ /*Small devices (landscape phones, 576px and up)*/
+ @media (max-width: 576px) { 
+	.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+  
+ }
+ 
+ 
+  /*Large devices (desktops, 992px and up)*/
+ @media (max-width: 992px) { 
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+ }
+ 
