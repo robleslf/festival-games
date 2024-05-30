@@ -1,0 +1,49 @@
+body {
+    background-image: url("https://images7.alphacoders.com/776/776536.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-image: url("https://andresabad.wordpress.com/wp-content/uploads/2007/08/pinguinito-tux-spanish-2165.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #reset {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
