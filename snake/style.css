@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: black;
+    background-image: url(selva.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 100px;
+    text-shadow:1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font:  Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+}
+
+h2 {
+    position: absolute;
+    top: 270px;  
+    left: 825px;
+    color: #ffffff;
+    text-shadow:1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    z-index: 40;
+    font-size: 30px;
+}
+
+#tablero {
+    position: absolute;
+    top: 330px;
+    left: 825px;
+}
+
