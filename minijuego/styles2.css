@@ -1,0 +1,36 @@
+
+.contenedor {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+#tablero {
+    display: grid;
+    grid-area: tablero;
+    grid-template-columns: repeat(9, 120px);
+    grid-template-rows: repeat(9, 120px);
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+  
+.casilla {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resultadoTirada {
+    clear: both;
+    padding-top: 20px;
+}

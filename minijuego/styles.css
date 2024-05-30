@@ -1,0 +1,70 @@
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    'jugador1 tablero jugador2'
+    '. controles .';
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tablero {
+  display: grid;
+  grid-area: tablero;
+  grid-template-columns: repeat(9, 120px);
+  grid-template-rows: repeat(9, 120px);
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.casilla {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.casilla:nth-child(odd) {
+  background-color: #fff;
+}
+
+.casilla:nth-child(even) {
+  background-color: #000;
+}
+
+#nuevaPartida {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos para los jugadores */
+.jugador {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#jugador1 {
+  grid-area: jugador1;
+}
+
+#jugador2 {
+  grid-area: jugador2;
+}
+
+#botonTirada {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#resultadoTirada {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
