@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+body{background-image: url('assets/img/inicio.gif');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+.pajaroVolante {
+  top: 400px;
+  left: 10px;
+  width: 60px;
+  height: 45px;
+  border-style: none;
+  padding: 10px;
+  font-weight: bold;
+  background-image: url(assets/img/movimientopajaro.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(0deg);
+  /* background-color: #2dec1c; */
+
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+
+}
+
+.pajaroVolante_2 {
+  top: 400px;
+  left: 10px;
+  width: 60px;
+  height: 47px;
+  border-style: none;
+  padding: 10px;
+  font-weight: bold;
+  background-image: url(assets/img/federica.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(0deg);
+  /* background-color: chocolate; */
+
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+
+
+}
+
+.pajaroVolante_3 {
+  top: 400px;
+  left: 10px;
+  width: 60px;
+  height: 47px;
+  border-style: none;
+  padding: 10px;
+  font-weight: bold;
+  background-image: url(assets/img/pajarracoNegro.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(0deg);
+  /* background-color: chocolate; */
+
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+
+
+}
+
+.container {
+  overflow: hidden;
+}
+
+
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+} 
+
+#play_boton {
+  width: 100px;
+  height: 100px;
+  color:antiquewhite;
+  background-color: rgb(169, 183, 247);
+  border-radius: 50%;
+  padding: 20px;
+  font-family: "Orbitron", monospace, sans-serif;
+  position: absolute;
+  top: 400px;
+  left: 30%;
+  background-image: url(assets/img/movimientopajaro.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#play_boton_2 {
+  width: 100px;
+  height: 100px;
+  color:antiquewhite;
+  background-color: rgb(204, 180, 226);
+  border-radius: 50%;
+  padding: 20px;
+  font-family: "Orbitron", monospace, sans-serif;
+  position: absolute;
+  top: 400px;
+  left: 45%;
+  background-image: url(assets/img/federica.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#play_boton_3 {
+  width: 100px;
+  height: 100px;
+  color:antiquewhite;
+  background-color: rgb(2, 4, 26);
+  border-radius: 50%;
+  padding: 20px;
+  font-family: "Orbitron", monospace, sans-serif;
+  position: absolute;
+  top: 400px;
+  left: 60%;
+  background-image: url(assets/img/pajarracoNegro.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#number {
+  font-size:50px;
+  color:#e4f312;
+  /* font-family: "Orbitron", monospace, sans-serif; */
+  font-family: "VT323", monospace;
+}
+ 
+
+.gifs_de_pajaritos {
+  width: 70px;
+  height: 50px;
+  background-image: url(assets/img/enemigos.gif);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  transform: scaleX(-1);
+  animation: moverPajaritos 4s linear infinite reverse; 
+  /* top: 300px; */
+  position: absolute;
+  /* background-color: aqua; */
+
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+}
+
+.murcielago {
+  width: 70px;
+  height: 50px;
+  background-image: url(assets/img/murcielago.gif);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  transform: scaleX(-1);
+  animation: moverMurcielaguitos 2s linear infinite reverse; 
+  top: 700px; 
+  position: absolute;
+  /* background-color: #e4f312; */
+
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+}
+
+/* se llamaba los rusos porque era otra imagen antes pero hubo problemas con las dimensiones */
+.losrusos {
+  width: 100px;
+  height: 100px;
+  background-image: url(assets/img/losrusos.gif);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  transform: scaleX(-1);
+  animation: moverPajaritos 15s linear infinite reverse; 
+  top: 700px; 
+  position: absolute;
+  /* background-color: #e4f312; */
+
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+}
+
+@keyframes moverPajaritos {
+  0% {
+    transform: translateX(10px);
+  }
+
+
+  100% {
+    transform: translateX(1800px);
+  }
+}
+
+@keyframes moverMurcielaguitos {
+  0% {
+    transform: translateX(10px) translateY(0px);
+  }
+  25% {
+    transform: translateX(450px) translateY(-100px);
+  }
+  50% {
+    transform: translateX(900px) translateY(50px);
+  }
+  75% {
+    transform: translateX(1350px) translateY(-150px);
+  }
+  100% {
+    transform: translateX(1800px) translateY(0px);
+  }
+}
+
+
+.muerte {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  top: 100px;
+  left: 47%;
+  background-image: url(assets/img/muerte.gif);
+  background-size: 100%;
+  animation: bajar_un_poco 2s linear forwards;
+}
+
+@keyframes bajar_un_poco {
+
+  0% {
+    transform: translateY(10px);
+  }
+
+
+  100% {
+    transform: translateY(150px);
+  }
+}
+
+
+
+.game_over {
+  font-family: 'Orbitron', monospace, sans-serif;
+  color: blueviolet;
+  font-size: 48px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px 40px; 
+  border: 3px solid blueviolet; 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+  text-align: center; 
+  animation: fadeIn 2s ease-in-out; 
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.puntuacion_final {
+  color: blue;
+}
+
+
+
+.clase_record {
+  font-family: "Orbitron", monospace, sans-serif;
+}
+
+
+
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.clase_record {
+  animation: parpadeo 1s infinite;
+  background-color: #ffc107; 
+  color: #333; 
+  padding: 10px; 
+  border-radius: 5px;
+  font-size: 18px; 
+  font-weight: bold; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-family: "Orbitron";
+}
+
+
+.misil {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%; 
+  position: absolute;
+}
+
+
+#record {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #1c534c; 
+  background-color: #ebcceb;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto; 
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  transform: translateX(-50%);
+  z-index: 9999; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+.mini_play_boton_1 {
+  width: 20px;
+  height: 20px;
+  color:antiquewhite;
+  background-color: rgb(169, 183, 247);
+  border-radius: 50%;
+  padding: 20px;
+  font-family: "Orbitron", monospace, sans-serif;
+  position: absolute;
+  top: 10%;
+  background-image: url(assets/img/movimientopajaro.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.mini_play_boton_2 {
+  width: 20px;
+  height: 20px;
+  color:antiquewhite;
+  background-color: rgb(204, 180, 226);
+  border-radius: 50%;
+  padding: 20px;
+  font-family: "Orbitron", monospace, sans-serif;
+  position: absolute;
+  top: 10%;
+  background-image: url(assets/img/federica.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.mini_play_boton_3 {
+  width: 20px;
+  height: 20px;
+  color:antiquewhite;
+  background-color: rgb(2, 4, 26);
+  border-radius: 50%;
+  padding: 20px;
+  font-family: "Orbitron", monospace, sans-serif;
+  position: absolute;
+  top: 10%;
+  background-image: url(assets/img/pajarracoNegro.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.misiles {
+  width: 100px;
+  height: 60px;
+  background-image: url(assets/img/misiles_horizontalesull-4x.gif);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  animation: moverMisiles 1s linear infinite reverse; 
+  top: 700px; 
+  position: absolute;
+  /* background-color: #e4f312; */
+
+  transform: scaleX(-1);
+
+  filter: contrast(200%) drop-shadow(1px 1px 1px rgb(255, 239, 11));
+}
+
+@keyframes moverMisiles {
+  0% {
+    transform: translateX(10px);
+  }
+
+
+  100% {
+    transform: translateX(1800px);
+  }
+}
+
+#titulo {
+  position: absolute;
+  top: 100px;
+  font-size: 80px;
+  color: #eef891;
+  left: 33%;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "VT323", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
