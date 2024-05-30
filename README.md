@@ -1,3 +1,1 @@
-# festival-games
-Página de minijuegos BUENÍSIMA
-Este repositorio contiene una locura de página web.
+LINK: https://robleslf.github.io/festival-games/
